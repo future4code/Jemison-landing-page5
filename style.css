@@ -51,6 +51,14 @@ header{
     width: 20px;
 }
 
+
+.entrar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 30%;
+}
+
 button{
     background-color: rgb(185, 62, 62);
     border: none;
@@ -69,7 +77,6 @@ button{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   
 }
 
 .principal video{ 
@@ -85,6 +92,7 @@ button{
    position:absolute;
    align-self: center;
    justify-items: center;
+
    height: 100vh;
 }
 
