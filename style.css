@@ -51,6 +51,7 @@ header{
     width: 20px;
 }
 
+
 .entrar{
     display: flex;
     align-items: center;
@@ -83,12 +84,16 @@ button{
    left: 0;
    position:static;
    object-fit: cover;
+   height: 100vh;
+   width: 100vw;
 }
 
 .principal .conteudo{  
    position:absolute;
    align-self: center;
    justify-items: center;
+
+   height: 100vh;
 }
 
 .principal p{
