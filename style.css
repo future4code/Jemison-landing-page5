@@ -5,53 +5,26 @@
     margin: 0;
     padding: 0;
 }
-header{
-    display: flex;
-    align-items: center;
-    background: none;
-    justify-content: center;
-    width: 100%;
-   
-}
+
 
 .menu{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px;
-    width: 100%;
+    display:flex;
+    align-items: center;
+ 
+    
+    
 }
-
-#logo{
-   display: flex;
-   align-items: center;
-   width: 120px;
+.icon{
+   width: 20%;
+   height: 20%;
   
 }
 .icone-menu{
-    display: flex;
-    align-items: center;
-    justify-items: flex-start;
-}
-
-.menu-do-meio{
-    display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.texto-menu{
-    font-size: 16px;
+       line-height: 0;
+    font-size: 20px;
     font-family: 'Mukta', sans-serif;
     font-weight: bold;
-    font-size: 20px;
 }
-
-.seta{
-    width: 20px;
-}
-
-
 .entrar{
     display: flex;
     align-items: center;
@@ -84,28 +57,28 @@ button{
    left: 0;
    position:static;
    object-fit: cover;
-   height: 100vh;
+   height: 60vh;
    width: 100vw;
 }
 
-.principal .conteudo{  
+.principal .conteudo{ 
+   margin-bottom: -2%;
+   bottom:-10%;   
    position:absolute;
    align-self: center;
-   justify-items: center;
-
-   height: 100vh;
+      height: 100vh;
 }
 
 .principal p{
-   margin-top:0 ;
-   font-size: 60px;
+   margin-top:5% ;
+   font-size: 50px;
    color: white;
    font-weight: bolder;
    padding-top: 0;
    text-align: center;
    font-family: 'Mukta', sans-serif;
    line-height: 0%;
-}        
+   }        
       
 
 
