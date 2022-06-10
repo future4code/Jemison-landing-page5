@@ -20,10 +20,13 @@
   
 }
 .icone-menu{
-       line-height: 0;
-    font-size: 20px;
-    font-family: 'Mukta', sans-serif;
-    font-weight: bold;
+   line-height: 0;
+   font-size: 20px;
+   font-family: 'Mukta', sans-serif;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 .entrar{
     display: flex;
@@ -39,7 +42,7 @@ button{
     color: white;
     display: flex;
     padding: 20px;
-    width: 112px;
+    width: 200px;
     justify-content: center;
     font-size: 15px;
     margin: 25px;
@@ -57,7 +60,7 @@ button{
    left: 0;
    position:static;
    object-fit: cover;
-   height: 60vh;
+   height: 100vh;
    width: 100vw;
 }
 
@@ -66,7 +69,7 @@ button{
    bottom:-10%;   
    position:absolute;
    align-self: center;
-      height: 100vh;
+   height: 100vh;
 }
 
 .principal p{
@@ -78,8 +81,52 @@ button{
    text-align: center;
    font-family: 'Mukta', sans-serif;
    line-height: 0%;
-   }        
+}   
+
+.pagina-dois{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 100vh;
+   width: 100vw;
+}
+  
+.imagens{
+   width: 50vw;
+   display: flex;
+   align-items: center;
+   height: 100vh;
+}
+  
+.textos{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
       
+}
+  
+.botao2{
+   width: 200px;
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 100px;
+   display: flex;
+   padding: 20px;
+   width: 200px;
+   justify-content: center;
+   font-size: 16px;
+   font-family: 'Mukta', sans-serif;
+   margin: 25px;
+}
+      
+.pagina-tres{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 100vh;
+   background: rgb(185, 62, 62);
+}
+  
 
 
 
