@@ -5,20 +5,18 @@
     margin: 0;
     padding: 0;
 }
-
-
 .menu{
     display:flex;
     align-items: center;
- 
-    
-    
+    justify-items: center;
+    margin: 1%;
+    text-align: center;
+   
 }
 .icon{
    width: 20%;
    height: 20%;
-  
-}
+ }
 .icone-menu{
    line-height: 0;
    font-size: 20px;
@@ -43,9 +41,10 @@ button{
     display: flex;
     padding: 20px;
     width: 200px;
+    height: 55px;
     justify-content: center;
     font-size: 15px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .principal{
@@ -60,7 +59,7 @@ button{
    left: 0;
    position:static;
    object-fit: cover;
-   height: 100vh;
+   height: 50vh;
    width: 100vw;
 }
 
@@ -81,13 +80,46 @@ button{
    text-align: center;
    font-family: 'Mukta', sans-serif;
    line-height: 0%;
-}   
+} 
+.icone-pag2{
+  padding: 0;
+width:90%
 
-.pagina-dois{
+}
+
+.pagina-dois #part1{
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   height: 100vh;
-   width: 100vw;
+   grid-template-columns: 30% 100% 100%;
+   height: 50vh;
+   width: 100vh;
+   max-width: 95vh;
+   margin-top: 5%;
+   margin-left: 2%;
+   margin-right: 2%;
+   padding: 8px;
+   align-items: center;
+   font-family: 'Mukta', sans-serif;
+   font-size: 30px;
+}
+
+.pagina-dois #part2{
+   display: grid;
+   grid-template-columns: 90% 100% 30%;
+   height: 50vh;
+   width: 90vh;
+   max-width: 90vh;
+   align-items: center;
+   justify-items:left ;
+   font-family: 'Mukta', sans-serif;
+   font-size: 30px;
+}
+
+#moveis{
+   width: 80%;
+}
+#logistica{
+   width: 80%;
+   
 }
   
 .imagens{
@@ -118,13 +150,15 @@ button{
    font-size: 16px;
    font-family: 'Mukta', sans-serif;
    margin: 25px;
+   
 }
       
 .pagina-tres{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   height: 100vh;
+   height: 50vh;
    background: rgb(185, 62, 62);
+   margin-top: 30% ;
 }
   
 
