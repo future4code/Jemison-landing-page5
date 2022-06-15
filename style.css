@@ -94,6 +94,7 @@ com o bg após a diminuição do display que está exibindo a página*/
    /*Ajuste do tamanho da foto referente ao ramo de logistica*/
    width: 30vw;
    padding: 30px;
+
 }
 #icone-descricao{
    /*alinhamento da segunda parte da descrição da empresa
@@ -153,21 +154,67 @@ com o bg após a diminuição do display que está exibindo a página*/
    margin: 20px;
 }
 
-footer{
-   /*alinhamento do rodapé*/
-   max-width: 100%;
-   font-size: 20px;
-   font-family: 'Mukta', sans-serif;
-   margin-left: 3%;
-  
-}
+/* Footer */
 
-.img-footer{
-   /*Ajuste de imagens das Redes Socias*/
-   margin: 0%;
-   width: 5%;
-   margin-top: -7px;
-}
-@media screen and (min-device-width : 320px) and (max-device-width : 480px){
-/*comando que diminui ajusta a página inteira quando o display que exibe o site diminui*/
-}
+.footer {
+   background: gray;
+   color: #fff;
+ }
+ 
+ .footer-container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 60px 20px;
+ 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .footer-info {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+ }
+ 
+ .footer-info img {
+   max-width: 45px;
+   height: 45px;
+   object-fit: contain;
+ }
+ 
+ .social-link {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+ }
+ 
+ .icone {
+   display: block;
+   transition: all 0.2s;
+ }
+ 
+ .icone svg {
+   width: 20px;
+   height: 20px;
+ }
+ 
+ .icone svg path {
+   fill: #fff;
+ }
+ 
+ .icone:hover svg path {
+   fill: rgb(185, 62, 62);
+ }
+ 
+ @media (max-width: 600px) {
+   .footer-container {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .social-link {
+     margin-top: 40px;
+   }
+ }
