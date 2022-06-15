@@ -11,9 +11,20 @@
    display:grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    justify-items: flex-start;
-   align-items: flex-start;
-   text-align: center; 
+   align-items: center;
+   
 }
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+ }
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: black;
+   margin: 8px;
+   transition: 0.3s;
+ }
 
 .icon{
    /*diminuição dos ícones que estão em 500x500*/
@@ -54,7 +65,8 @@
 }
 /*.principal vídeo e logo servem para permanecer o logo alinhado
 com o bg após a diminuição do display que está exibindo a página*/
-.principal video{
+
+.principal video{ 
    top: 0;
    left: 0;
    position:static;
@@ -63,21 +75,18 @@ com o bg após a diminuição do display que está exibindo a página*/
    width: 100vw;
 }
 
-.principal .conteudo{ 
+.principal .conteudo{  
    display: flex;
    position:absolute;
    align-self: center;
    height: 50vh;
 }
 
-.descricao{
-   /*Grid para manter o alinhamento da descrição da empresa*/
+.meio{
    display:grid;
    grid-template-columns: 1fr 6fr 1fr;
    align-items: center;
    justify-items: center;
-   font-family: 'Mukta', sans-serif;
-   font-size: 30px;
 }
 
 .icone-pag2{
@@ -90,20 +99,26 @@ com o bg após a diminuição do display que está exibindo a página*/
    padding: 30px;
 }
 
+#part1 p{
+   font-size: 30px;
+   padding: 30px;
+}
+
 #logistica{
    /*Ajuste do tamanho da foto referente ao ramo de logistica*/
    width: 30vw;
    padding: 30px;
-
 }
-#icone-descricao{
-   /*alinhamento da segunda parte da descrição da empresa
-   precisou ser feito separado por conta da disposição das imagem*/
+#icone-texto{
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 
+#part2 p{
+   font-size: 30px;
+   padding: 30px;
+}
 #btn-cliente{
    background-color: rgb(185, 62, 62);
     border: none;
@@ -119,25 +134,18 @@ com o bg após a diminuição do display que está exibindo a página*/
    /*grid criado para que asection fique alinhada qundo diminuido
    o tamanho do dsplay que apresenta o site*/
    background-color: rgb(185, 62, 62);
-   color: white;
-   font-family: 'Mukta', sans-serif;
    height: 50vh;
    width: 100vw;
    display: grid;
    grid-template-columns: 1fr;
    align-items: center;
    justify-items: center;
- display: flex;
-   flex-direction: column;
-   justify-content: center;
 }
 #textos{
-   /*div que alinha os textos da terceira parte nas posições desejadas*/
+    /*div que alinha os textos da terceira parte nas posições desejadas*/
    display: flex;
    flex-direction: column;
    justify-content: center;
-   font-size: 30px;
-   padding: 30px;
 }
 
 #botao2{
@@ -153,9 +161,10 @@ com o bg após a diminuição do display que está exibindo a página*/
    font-family: 'Mukta', sans-serif;
    margin: 20px;
 }
-
-
-
+#textos p{
+   font-size: 30px;
+   padding: 30px;
+}
 .footer {
    background: gray;
    color: #fff;
@@ -207,31 +216,74 @@ com o bg após a diminuição do display que está exibindo a página*/
  .icone:hover svg path {
    fill: rgb(185, 62, 62);
  }
- 
- @media (max-width: 600px) {
-   .icone-menu p{
-      display: none;
+
+
+@media screen and (max-device-width : 480px){
+   .menu{
+      padding: 10px;
+   }
+   body{
+      overflow-x: hidden;
    }
    #btn-home{
-    width: 200px;
-    margin-left: -60px;
-    margin-right: -60px;
-    margin-top: 15px;
+      width: 83vw;
    }
-   .icone-menu img{
-      width: 70px;
-   }
-  #btn-entrar{
-   width: 60px;
-   height: 30px;
-   align-items: center;
-   }
-   .footer-container {
-     flex-direction: column;
-     align-items: flex-start;
+   #btn-entrar{
+      display: none;
    }
    
-   .social-link {
-     margin-top: 40px;
+   .icone-pag2{
+      display: none;
    }
- }
+   .meio{
+      display: flex;
+      flex-direction: column;
+   }
+   .menu .icone-menu{
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 50vh;
+      background: rgb(185, 62, 62);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+   }
+   .icone-menu a{
+      display: none;
+   }
+   .icone-menu p{
+      margin-left: 0;
+      opacity: 0;
+   }
+   .mobile-menu{
+      display: block;
+   }
+   #part1 #moveis{
+      width: 100vw;
+   }
+   #part2 img{
+      width: 50vw;
+   }
+   .img-footer{
+      width: 16vw;
+      bottom: 100px;
+   }
+   .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    .footer-info img{
+      right: 0;
+    }
+  
+    .social-link {
+      margin-top: 20px;
+      
+    }
+  
+}  
