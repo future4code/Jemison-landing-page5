@@ -154,7 +154,7 @@ com o bg após a diminuição do display que está exibindo a página*/
    margin: 20px;
 }
 
-/* Footer */
+
 
 .footer {
    background: gray;
@@ -209,11 +209,28 @@ com o bg após a diminuição do display que está exibindo a página*/
  }
  
  @media (max-width: 600px) {
+   .icone-menu p{
+      display: none;
+   }
+   #btn-home{
+    width: 200px;
+    margin-left: -60px;
+    margin-right: -60px;
+    margin-top: 15px;
+   }
+   .icone-menu img{
+      width: 70px;
+   }
+  #btn-entrar{
+   width: 60px;
+   height: 30px;
+   align-items: center;
+   }
    .footer-container {
      flex-direction: column;
      align-items: flex-start;
    }
- 
+   
    .social-link {
      margin-top: 40px;
    }
