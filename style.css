@@ -5,25 +5,23 @@
     margin: 0;
     padding: 0;
 }
-#btn-home{
-   margin: -12%;
- padding-top: 30px;
 
-}
 .menu{
-    display:flex;
-    align-items: center;
-    justify-items: center;
-    margin: 2%;
-    text-align: center;
-    
-   
+   /*Grid para alinhar os itens do cabeçalho*/
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   justify-items: flex-start;
+   align-items: flex-start;
+   text-align: center; 
 }
+
 .icon{
+   /*diminuição dos ícones que estão em 500x500*/
    width: 20%;
    height: 20%;
  }
 .icone-menu{
+   /*div para manter a legenda logo abaixo do ícone*/
    line-height: 0;
    font-size: 20px;
    font-family: 'Mukta', sans-serif;
@@ -32,14 +30,9 @@
    justify-content: center;
    flex-direction: column;
 }
-.entrar{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 30%;
-}
-
 #btn-entrar{
+   /*estética e alinhamento separado do botão entrar,
+   como ele é maior que os ícones deve ser alinhado separado */
     background-color: rgb(185, 62, 62);
     border: none;
     border-radius: 100px;
@@ -52,113 +45,101 @@
     font-size: 15px;
     margin: 20px;
 }
-
 .principal{
-   overflow: hidden;
+   /*alinhamento do logo da empresa com o 
+   vídeo que serve de background*/
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
-
-.principal video{ 
+/*.principal vídeo e logo servem para permanecer o logo alinhado
+com o bg após a diminuição do display que está exibindo a página*/
+.principal video{
    top: 0;
    left: 0;
    position:static;
    object-fit: cover;
-   height: 50vh;
+   height: 75vh;
    width: 100vw;
 }
 
 .principal .conteudo{ 
-   margin-bottom: -2%;
-   bottom:-10%;   
+   display: flex;
    position:absolute;
    align-self: center;
-   height: 100vh;
+   height: 50vh;
 }
 
-.principal p{
-   margin-top:5% ;
-   font-size: 50px;
-   color: white;
-   font-weight: bolder;
-   padding-top: 0;
-   text-align: center;
+.descricao{
+   /*Grid para manter o alinhamento da descrição da empresa*/
+   display:grid;
+   grid-template-columns: 1fr 6fr 1fr;
+   align-items: center;
+   justify-items: center;
    font-family: 'Mukta', sans-serif;
-   line-height: 0%;
-} 
+   font-size: 30px;
+}
+
 .icone-pag2{
-  padding: 0;
-width:90%
-
+   /* ajuste no tamanho dos icones da descrição da empresa*/
+   width:7vw;
 }
-
-.pagina-dois #part1{
-   display: grid;
-   grid-template-columns: 30% 100% 100%;
-   height: 50vh;
-   max-width: 90vh;
-   margin-top: 5%;
-   margin-left: 2%;
-   margin-right: 2%;
-   
-   align-items: center;
-   font-family: 'Mukta', sans-serif;
-   font-size: 30px;
-   
-}
-#logistica{
-   min-width: 100%;
-  
-}
-
-.pagina-dois #part2{
-   display: grid;
-   grid-template-columns: 60% 100% 30%;
-   height: 50vh;
-   width: 90vh;
-   max-width: 90vh;
-   align-items: center;
-   justify-items:left ;
-   font-family: 'Mukta', sans-serif;
-   font-size: 30px;
-   
-}
-
 #moveis{
-   width: 80%;
+   /*Ajuste do tamnanho da foto referente a loja de moveis*/
+   width: 50vw;
+   padding: 30px;
 }
+
 #logistica{
-   width: 80%;
-   
-   
+   /*Ajuste do tamanho da foto referente ao ramo de logistica*/
+   width: 30vw;
+   padding: 30px;
 }
+#icone-descricao{
+   /*alinhamento da segunda parte da descrição da empresa
+   precisou ser feito separado por conta da disposição das imagem*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
 #btn-cliente{
-background-color: rgb(185, 62, 62);
+   background-color: rgb(185, 62, 62);
     border: none;
     border-radius: 100px;
     color: white;
-    display: flex;
     padding: 20px;
     width: 200px;
     height: 55px;
-    justify-content: center;
-    font-size: 18px;
+    font-size: 15px;
     margin: 20px;
-    margin-left:1250px;
-   
 }
-  
-.textos{
+.pagina-tres{
+   /*grid criado para que asection fique alinhada qundo diminuido
+   o tamanho do dsplay que apresenta o site*/
+   background-color: rgb(185, 62, 62);
+   color: white;
+   font-family: 'Mukta', sans-serif;
+   height: 50vh;
+   width: 100vw;
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   justify-items: center;
+ display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#textos{
+   /*div que alinha os textos da terceira parte nas posições desejadas*/
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
    justify-content: center;
-      
+   font-size: 30px;
+   padding: 30px;
 }
-  
-.botao2{
-   width: 200px;
+
+#botao2{
    background-color: white;
    color: black;
    border: none;
@@ -167,40 +148,74 @@ background-color: rgb(185, 62, 62);
    padding: 20px;
    width: 200px;
    justify-content: center;
-   font-size: 20px;
+   font-size: 19px;
    font-family: 'Mukta', sans-serif;
-   margin: 25px;
-   margin-left: 1200px;
-  line-height: 25%;
-  
-   
+   margin: 20px;
 }
-      
-.pagina-tres{
+
+/* Footer */
+
+.footer {
+   background: gray;
+   color: #fff;
+ }
+ 
+ .footer-container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 60px 20px;
+ 
    display: flex;
-   height: 35vh;
-   width: 100hv;
-   background: rgb(185, 62, 62);
-   color: white;
-   font-size: 30px;
-   font-family: 'Mukta', sans-serif;
-   align-items: top;
- padding-left: 3%;
-   
-}
-footer{
-   max-width: 100%;
-   font-size: 20px;
-   font-family: 'Mukta', sans-serif;
-   margin-left: 3%;
-  
-}
-
-.img-footer{
-   margin: 1%;
-   width: 5%;
-   margin-top: -6px;
-}
-
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .footer-info {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+ }
+ 
+ .footer-info img {
+   max-width: 45px;
+   height: 45px;
+   object-fit: contain;
+ }
+ 
+ .social-link {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+ }
+ 
+ .icone {
+   display: block;
+   transition: all 0.2s;
+ }
+ 
+ .icone svg {
+   width: 20px;
+   height: 20px;
+ }
+ 
+ .icone svg path {
+   fill: #fff;
+ }
+ 
+ .icone:hover svg path {
+   fill: rgb(185, 62, 62);
+ }
+ 
+ @media (max-width: 600px) {
+   .footer-container {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .social-link {
+     margin-top: 40px;
+   }
+ }
 
 
