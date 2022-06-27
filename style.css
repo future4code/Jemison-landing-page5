@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+   /*Grid para alinhar os itens do cabeçalho*/
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   justify-items: flex-start;
+   align-items: center;
+}
+
+.icon{
+   /*diminuição dos ícones que estão em 500x500*/
+   max-width: 20%;
+   max-height: 20%;
+  }
+.icone-menu{
+   /*div para manter a legenda logo abaixo do ícone*/
+   line-height: 0;
+   font-size: 20px;
+   font-family: 'Mukta', sans-serif;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+#btn-entrar{
+   /*estética e alinhamento separado do botão entrar,
+   como ele é maior que os ícones deve ser alinhado separado */
+    background-color: rgb(185, 62, 62);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    padding: 20px;
+    width: 200px;
+    height: 55px;
+    justify-content: center;
+    font-size: 15px;
+    margin: 20px;
+}
+.principal{
+   /*alinhamento do logo da empresa com o 
+   vídeo que serve de background*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+/*.principal vídeo e logo servem para permanecer o logo alinhado
+com o bg após a diminuição do display que está exibindo a página*/
+
+.principal video{ 
+   top: 0;
+   left: 0;
+   position:static;
+   object-fit: cover;
+   height: 75vh;
+   width: 100vw;
+}
+
+.principal .conteudo{  
+   display: flex;
+   position:absolute;
+   align-self: center;
+   height: 50vh;
+}
+
+.meio{
+   display:grid;
+   grid-template-columns: 1fr 6fr 1fr;
+   align-items: center;
+   justify-items: center;
+   font-family: 'Mukta', sans-serif;
+}
+
+.icone-pag2{
+   /* ajuste no tamanho dos icones da descrição da empresa*/
+   width:7vw;
+}
+#moveis{
+   /*Ajuste do tamnanho da foto referente a loja de moveis*/
+   width: 50vw;
+   padding: 30px;
+}
+
+#part1 p{
+   font-size: 30px;
+   padding: 30px;
+}
+
+#logistica{
+   /*Ajuste do tamanho da foto referente ao ramo de logistica*/
+   width: 30vw;
+   padding: 30px;
+}
+#icone-texto{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+
+#part2 p{
+   font-size: 30px;
+   padding: 30px;
+}
+#btn-cliente{
+   background-color: rgb(185, 62, 62);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 55px;
+    font-size: 15px;
+    margin: 20px;
+}
+.pagina-tres{
+   /*grid criado para que asection fique alinhada qundo diminuido
+   o tamanho do dsplay que apresenta o site*/
+   background-color: rgb(185, 62, 62);
+   height: 50vh;
+   width: 100vw;
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   justify-items: center;
+   font-family: 'Mukta', sans-serif;
+   font-size: 16px;
+   line-height: 35px;
+   color: white;
+}
+#textos{
+    /*div que alinha os textos da terceira parte nas posições desejadas*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#botao2{
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 100px;
+   display: flex;
+   padding: 20px;
+   width: 180px;
+   height: 30px;
+   justify-content: center;
+   font-size: 19px;
+   font-family: 'Mukta', sans-serif;
+   margin: 20px;
+}
+#textos p{
+   font-size: 30px;
+   padding: 30px;
+}
+.footer {
+   background: gray;
+   color: #fff;
+ }
+ 
+ .footer-container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 60px 20px;
+ 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .footer-info {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+ }
+ 
+ .footer-info img {
+   max-width: 45px;
+   height: 45px;
+   object-fit: contain;
+ }
+ 
+ .social-link {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+ }
+ 
+ .icone {
+   display: block;
+   transition: all 0.2s;
+ }
+ 
+ .icone svg {
+   width: 20px;
+   height: 20px;
+ }
+ 
+ .icone svg path {
+   fill: #fff;
+ }
+ 
+ .icone:hover svg path {
+   fill: rgb(185, 62, 62);
+ }
+
+#form img{
+   position: relative;
+}
+#form campos{
+   position: absolute;
+  font-size: 40px;
+  color: black;
+  text-shadow: 0px 0px 5px black;
+}
+
+
+@media screen and (max-device-width : 900px){
+   *{
+      margin: 0;
+      padding: 0;
+      max-width: 50vh;
+   }
+   .icone-menu p{
+      display: none;
+   }
+   #btn-home{
+    width: 200px;
+    margin-right: -180px;
+    margin-top: 15px;
+   }
+   .icone-menu img{
+      min-height: 50px;
+      min-width: 50px;
+      margin-right: 0px;
+   }
+  #btn-entrar{
+   width: 60px;
+   height: 30px;
+   align-items: center;
+   }
+   
+   .meio{
+      display: flex;
+      flex-direction: column;
+   }
+  
+   #part1 #moveis{
+      width: 100vw;
+   }
+   
+   #logistica img{
+      width: 50vw;
+   }
+   
+   .icone-pag2{
+      width: 50px;
+      margin: 10px;
+      align-self: center;
+   
+   }
+   .meio{
+      font-size: 13px;
+      line-height: 35px;
+   }
+   .pagina-tres{
+      min-height: 70vh;
+   }
+   .img-footer{
+      width: 16vw;
+      bottom: 100px;
+   }
+   .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+   
+    .footer-info img{
+      right: 0;
+    }
+  
+    .social-link {
+      margin-top: 20px;
+   }
+   }
